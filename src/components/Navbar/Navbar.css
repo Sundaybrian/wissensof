@@ -1,0 +1,64 @@
+nav.wissnav{
+    background:transparent;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px ;
+    position: sticky;
+}
+
+.wissnav__styledHamburger{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   border:0px none;
+   background-color:transparent;
+   
+}
+
+.wissnav__hamburgerBox{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 24px;
+}
+
+.wissnav__hamburgerInner{
+    background-color:var(--ham-color);
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    border-radius: 2px;
+    top:50%;
+    left:0px;
+    right: 0px;
+    transition:transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+    transform: rotate(0deg);
+}
+
+.wissnav__hamburgerInner::before{
+    width: 100%;
+    top:-10px;
+    opacity: 1;
+    transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in 0s;
+
+}
+
+.wissnav__hamburgerInner::before,
+.wissnav__hamburgerInner::after {
+  content: "";
+  display: block;
+  background-color:var(--ham-color);
+  position: absolute;
+  left: auto;
+  right: 0px;
+  /* width: 30px; */
+  height: 2px;
+  /* transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: transform; */
+  border-radius: 4px;
+}

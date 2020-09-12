@@ -1,8 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## https://www.figma.com/file/SGRh3kpdQmRt01jmrSWA9m/Wissensof?node-id=151%3A4079
-
 
 ## Available Scripts
 
