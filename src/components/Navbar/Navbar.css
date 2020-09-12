@@ -7,7 +7,10 @@ nav.wissnav{
     justify-content: space-between;
     padding: 0 10px ;
     position: sticky;
+    cursor: pointer;
+    z-index: 99;
 }
+
 
 .wissnav__styledHamburger{
    display: flex;
