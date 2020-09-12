@@ -1,13 +1,14 @@
-nav.wissnav{
-    background:transparent;
+.wissnav{
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px ;
+    position: -webkit-sticky;
     position: sticky;
     cursor: pointer;
+    top: 0;
     z-index: 99;
 }
 
@@ -30,7 +31,7 @@ nav.wissnav{
 }
 
 .wissnav__hamburgerInner{
-    background-color:var(--ham-color);
+    background-color:var(--white);
     position: absolute;
     width: 25px;
     height: 2px;
@@ -54,7 +55,7 @@ nav.wissnav{
 .wissnav__hamburgerInner::after {
   content: "";
   display: block;
-  background-color:var(--ham-color);
+  background-color:var(--white);
   position: absolute;
   left: auto;
   right: 0px;

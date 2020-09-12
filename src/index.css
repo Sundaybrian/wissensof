@@ -4,8 +4,9 @@
   --ham-color: cyan;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
+  --offBlack:#0f0f0f;
   --mainGrey: #ececec;
-  --darkGrey: #cfcfcf;
+  --darkGrey: #C4C4C4;;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -18,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   background:var(--offBlack);
   
 }
 
