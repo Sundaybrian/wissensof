@@ -10,7 +10,6 @@ import Banner from "../Banner/Banner";
 function Hero({ hero }) {
     return (
         <header className={hero}>
-
             <Navbar />
             <Banner title="We provide innovative software solutions & application development." />
             <p className="scrolldown">
