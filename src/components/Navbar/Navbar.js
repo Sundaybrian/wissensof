@@ -22,12 +22,9 @@ function Navbar() {
             </div>
 
             <div className="wissnav__styledHamburger" onClick={handleClick}>
-                {overlay ? (<div className="wissnav__hamburgerBox" >
+                <div className="wissnav__hamburgerBox" >
                     <div className="wissnav__hamburgerInner"></div>
-                </div>) : (
-                        <h2>lococo</h2>
-                    )}
-
+                </div>
             </div>
         </nav>)
 
