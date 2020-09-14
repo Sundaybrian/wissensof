@@ -1,8 +1,14 @@
+/** @jsx jsx */
 import React, { useState } from "react";
 import { css, jsx } from "@emotion/core";
 import SliderContent from "./SliderContent";
+import Slide from "./Slide";
 
-function Slider() {
+/**
+ *
+ * @function Slider
+ */
+function Slider({ slides }) {
   const getWidth = () => window.innerWidth;
 
   const [state, setState] = useState({
@@ -18,14 +24,18 @@ function Slider() {
         translate={translate}
         transition={transition}
         width={getWidth()}
-      ></SliderContent>
+      >
+        {slides.map((slide, i) => (
+          <Slide key={slide + i} content={slide} />
+        ))}
+      </SliderContent>
     </div>
   );
 }
 
 const SliderCSS = css`
   position: relative;
-  height: 100%;
+  height: 50vh;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;

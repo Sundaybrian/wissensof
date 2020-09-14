@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import React from "react";
 import { css, jsx } from "@emotion/core";
 
@@ -12,7 +13,7 @@ function Slide({ content }) {
         background-repeat: no-repeat;
         background-position: center;
       `}
-    ></div>
+    />
   );
 }
 
