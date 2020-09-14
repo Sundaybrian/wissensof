@@ -23,7 +23,7 @@ function Arrow({ direction, handleClick }) {
         &:hover {
           transform: scale(1.1);
         }
-        img {
+        i {
           transform: translateX(${direction === "left" ? "-2" : "2"}px);
           &:focus {
             outline: 0;
@@ -32,9 +32,13 @@ function Arrow({ direction, handleClick }) {
       `}
     >
       {direction === "right" ? (
-        <img src={FaAngleRight} />
+        <i>
+          <FaAngleRight />
+        </i>
       ) : (
-        <img src={FaAngleLeft} />
+        <i>
+          <FaAngleLeft />
+        </i>
       )}
     </div>
     /** */
