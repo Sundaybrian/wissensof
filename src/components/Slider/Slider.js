@@ -4,6 +4,7 @@ import { css, jsx } from "@emotion/core";
 import SliderContent from "./SliderContent";
 import Slide from "./Slide";
 import Arrow from "./Arrow";
+import Dots from "./Dots";
 
 /**
  *
@@ -66,6 +67,7 @@ function Slider({ slides }) {
 
       <Arrow direction="left" handleClick={prevSlide} />
       <Arrow direction="right" handleClick={nextSlide} />
+      <Dots slides={slides} activeIndex={activeIndex} />
     </div>
   );
 }
