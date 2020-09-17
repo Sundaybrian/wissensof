@@ -12,9 +12,10 @@ function Projects() {
 
   return (
     <div className="container">
-      <section className="projects">
-        <Title title="Projects" />
-        <Slider slides={images} />
+      <section className="projects row">
+        <div className="col-sm-12">
+          <Slider slides={images} />
+        </div>
       </section>
     </div>
   );

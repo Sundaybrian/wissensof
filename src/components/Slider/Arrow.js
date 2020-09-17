@@ -9,11 +9,8 @@ function Arrow({ direction, handleClick }) {
       onClick={handleClick}
       css={css`
         display: flex;
-        position: absolute;
-        top: 50%;
-        ${direction === "right" ? `right:25px` : `left:25px`};
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         justify-content: center;
         border: 2px solid #f2f2f2;
         border-radius: 50%;
@@ -41,8 +38,12 @@ function Arrow({ direction, handleClick }) {
         </i>
       )}
     </div>
-    /** */
   );
 }
 
+/**
+ *  position: absolute;
+        // top: 50%;
+        // ${direction === "right" ? `right:25px` : `left:25px`};
+ */
 export default Arrow;

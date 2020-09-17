@@ -5,6 +5,7 @@ import SliderContent from "./SliderContent";
 import Slide from "./Slide";
 import Arrow from "./Arrow";
 import Dots from "./Dots";
+import Title from "../Title";
 
 /**
  *
@@ -54,29 +55,51 @@ function Slider({ slides }) {
   };
 
   return (
-    <div css={SliderCSS}>
-      <SliderContent
-        translate={translate}
-        transition={transition}
-        width={getWidth()}
-      >
-        {slides.map((slide, i) => (
-          <Slide key={slide + i} content={slide} />
-        ))}
-      </SliderContent>
+    <div>
+      <div css={SliderHeader}>
+        <Title title="testing" />
+        <div css={SliderArrows}>
+          <Arrow direction="left" handleClick={prevSlide} />
+          <Arrow direction="right" handleClick={nextSlide} />
+        </div>
+      </div>
+      <div css={SliderCSS}>
+        <SliderContent
+          translate={translate}
+          transition={transition}
+          width={getWidth() * slides.length}
+        >
+          {slides.map((slide, i) => (
+            <Slide key={slide + i} content={slide} />
+          ))}
+        </SliderContent>
 
-      <Arrow direction="left" handleClick={prevSlide} />
-      <Arrow direction="right" handleClick={nextSlide} />
-      <Dots slides={slides} activeIndex={activeIndex} />
+        <Dots slides={slides} activeIndex={activeIndex} />
+      </div>
     </div>
   );
 }
 
 const SliderCSS = css`
   position: relative;
-  height: 50vh;
+  // height: 60vh;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 `;
+
+const SliderHeader = css`
+  display: flex;
+  justify-content: space-between;
+  background: red;
+`;
+
+const SliderArrows = css`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 export default Slider;
