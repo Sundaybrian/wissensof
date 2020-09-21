@@ -1,33 +1,93 @@
-import React, { useState } from 'react'
-import Logo from "../../Assets/logo.png";
-import NavbarOverlay from './NavbarOverlay';
-import "./Navbar.css";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
+import Logo from "../../Assets/logo.png";
+import "./navbar.css";
 
 function Navbar() {
+  const [click, setClick] = useState(true);
 
-    const [overlay, setOverlay] = useState(false)
+  const handleClick = () => setClick(!click);
 
-    const handleClick = (e) => {
-        setOverlay(!overlay);
-    }
+  const closeMobileMenu = () => setClick(true);
 
-    if (overlay) {
-        return <NavbarOverlay handleClick={handleClick} overlay={overlay} />
-    }
-    return (
-        <nav className="wissnav">
-            <div className="wissnav__logo">
-                <img src={Logo} alt="" />
+  return (
+    <>
+      <nav className="navbar">
+        <div className="navbar__container">
+          <Link to="/" className="navbar__logo">
+            <img src={Logo} alt="" />
+          </Link>
+
+          <div className="wissnav__styledHamburger" onClick={handleClick}>
+            <div className="wissnav__hamburgerBox">
+              {click ? (
+                <div className="wissnav__hamburgerInner"></div>
+              ) : (
+                <span className="close__btn js-close-btn">&times;</span>
+              )}
             </div>
+          </div>
+          {/* hamburger */}
 
-            <div className="wissnav__styledHamburger" onClick={handleClick}>
-                <div className="wissnav__hamburgerBox" >
-                    <div className="wissnav__hamburgerInner"></div>
-                </div>
-            </div>
-        </nav>)
-
+          <ul className={click ? "nav__menu " : "nav__menu active"}>
+            <li className="nav__item">
+              <Link
+                to="/about"
+                className="nav__links"
+                onClick={closeMobileMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
+                to="/about"
+                className="nav__links"
+                onClick={closeMobileMenu}
+              >
+                About
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
+                to="/projects"
+                className="nav__links"
+                onClick={closeMobileMenu}
+              >
+                Projects
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link to="/team" className="nav__links" onClick={closeMobileMenu}>
+                Team
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
+                to="/contact"
+                className="nav__links"
+                onClick={closeMobileMenu}
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
+                to="/get-started"
+                className="nav__linksMobile"
+                onClick={closeMobileMenu}
+              >
+                Get Started
+              </Link>
+            </li>
+          </ul>
+        </div>
+        {/* nav container
+         */}
+      </nav>
+    </>
+  );
 }
 
-export default Navbar
+export default Navbar;

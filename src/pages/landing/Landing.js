@@ -8,7 +8,7 @@ import Projects from "../../components/Projects/Projects";
 function Landing() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <About />
       <Projects />
     </>
