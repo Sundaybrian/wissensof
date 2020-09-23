@@ -1,18 +1,23 @@
 .defaultHero {
   height: 100vh;
+  width: 100%;
   min-height: calc(100vh-66px);
   background: url("https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80")
-    center/cover no-repeat;
+    center center/cover no-repeat;
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
 }
 
 .defaultHero .scrolldown a {
   position: absolute;
   bottom: 30px;
-  left: 50%;
-  margin-left: 29px;
+  left: 45%;
+  /* margin-left: 29px; */
   color: var(--darkGrey);
   display: block;
   height: 42px;
@@ -20,8 +25,11 @@
   font-size: 35px;
   line-height: 42px;
   background: rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
+  transition: 0.3s;
 }
 
-header .scrolldown a:hover {
-  color: #11abb0;
+.defaultHero .scrolldown a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { FaAngleDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import Banner from "../Banner/Banner";
 
@@ -9,9 +10,9 @@ function Hero({ hero }) {
     <header className={hero}>
       <Banner title="We provide innovative software solutions & application development." />
       <p className="scrolldown">
-        <a className="smoothscroll" href="#about">
+        <Link className="smoothscroll" to="#about">
           <FaAngleDown />
-        </a>
+        </Link>
       </p>
     </header>
   );

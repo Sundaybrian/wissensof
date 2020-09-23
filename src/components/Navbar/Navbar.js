@@ -15,7 +15,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to="/" className="navbar__logo">
+          <Link to="/" className="navbar__logo" onClick={closeMobileMenu}>
             <img src={Logo} alt="" />
           </Link>
 
