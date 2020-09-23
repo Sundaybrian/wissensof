@@ -5,6 +5,7 @@ import "./App.css";
 
 import Landing from "./pages/landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Landing} />
       </Switch>
-      <h2>wissensof</h2>
+      <Footer />
     </div>
   );
 }
