@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --white: floralwhite;
   --ham-color: cyan;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
-  --offBlack: #0f0f0f;
+  --offBlack: #000000;
   --mainGrey: #ececec;
   --darkGrey: #c4c4c4;
   --brand-color: #47a4de;
@@ -12,11 +18,12 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Nunito", sans-serif, "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--offBlack);
