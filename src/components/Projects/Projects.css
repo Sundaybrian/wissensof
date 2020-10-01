@@ -1,6 +1,7 @@
 .buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .buttons__back {
@@ -29,4 +30,40 @@
 
 i:focus {
   outline: 0;
+}
+.slide {
+  border: none;
+  overflow: visible;
+}
+.slide__card {
+  border: none;
+  margin: 0 0.4rem !important;
+  border-bottom: 2px solid #4f4f4f !important;
+}
+
+.slide__cardbody {
+  background: var(--offBlack);
+  padding: 1rem 0 !important;
+}
+
+.slide__wiss__info {
+  background-color: var(--offBlack);
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  right: 0;
+  height: 55px;
+  width: 100%;
+  padding: 10px 10px 10px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .slide__cardbody {
+    background: var(--offBlack);
+    padding: 0.2rem 0 !important;
+  }
+  .control__btn {
+    height: 35px;
+    width: 35px;
+  }
 }

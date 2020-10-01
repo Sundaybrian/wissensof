@@ -12,35 +12,42 @@ import {
   Image,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import club from "../../Assets/club.png";
+
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button,
+} from "reactstrap";
 
 function Projects() {
   const images = [
     {
       path: "#!",
       text: "Tess Mercer",
-      src:
-        "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+      src: club,
       label: "test",
     },
     {
       path: "#!",
       text: "Tess Mercer2",
-      src:
-        "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+      src: club,
       label: "test",
     },
     {
       path: "#!",
       text: "Tess Mercer3",
-      src:
-        "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+      src: club,
       label: "test",
     },
     {
       path: "#!",
       text: "Tess Mercer3",
-      src:
-        "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+      src: club,
       label: "test",
     },
   ];
@@ -52,7 +59,7 @@ function Projects() {
           <CarouselProvider
             visibleSlides={2}
             naturalSlideWidth={500}
-            naturalSlideHeight={400}
+            naturalSlideHeight={496}
             totalSlides={images.length}
           >
             {" "}
@@ -71,9 +78,22 @@ function Projects() {
               </div>
             </Title>
             <Slider>
-              {images.map((img) => (
-                <Slide index={0}>
-                  <Image src={img.src} />
+              {images.map((img, index) => (
+                <Slide index={index} className="slide">
+                  <div>
+                    <Card className="slide__card">
+                      <CardImg
+                        top
+                        width="100%"
+                        src={img.src}
+                        alt="Card image cap"
+                      />
+                      <CardBody className="slide__cardbody">
+                        <CardTitle>{img.text}</CardTitle>
+                        <CardSubtitle>{img.label}</CardSubtitle>
+                      </CardBody>
+                    </Card>
+                  </div>
                 </Slide>
               ))}
             </Slider>
