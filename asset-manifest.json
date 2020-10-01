@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wissensof/static/css/main.158d85cb.chunk.css",
-    "main.js": "/wissensof/static/js/main.633f24e9.chunk.js",
-    "main.js.map": "/wissensof/static/js/main.633f24e9.chunk.js.map",
+    "main.js": "/wissensof/static/js/main.00f85027.chunk.js",
+    "main.js.map": "/wissensof/static/js/main.00f85027.chunk.js.map",
     "runtime-main.js": "/wissensof/static/js/runtime-main.ad922079.js",
     "runtime-main.js.map": "/wissensof/static/js/runtime-main.ad922079.js.map",
     "static/css/2.ad676774.chunk.css": "/wissensof/static/css/2.ad676774.chunk.css",
     "static/js/2.4c5be79b.chunk.js": "/wissensof/static/js/2.4c5be79b.chunk.js",
     "static/js/2.4c5be79b.chunk.js.map": "/wissensof/static/js/2.4c5be79b.chunk.js.map",
     "index.html": "/wissensof/index.html",
-    "precache-manifest.9907108a579a79b0a6ca38d66fdc915b.js": "/wissensof/precache-manifest.9907108a579a79b0a6ca38d66fdc915b.js",
+    "precache-manifest.735fb345439a03ee38472acd89188265.js": "/wissensof/precache-manifest.735fb345439a03ee38472acd89188265.js",
     "service-worker.js": "/wissensof/service-worker.js",
     "static/css/2.ad676774.chunk.css.map": "/wissensof/static/css/2.ad676774.chunk.css.map",
     "static/css/main.158d85cb.chunk.css.map": "/wissensof/static/css/main.158d85cb.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.ad676774.chunk.css",
     "static/js/2.4c5be79b.chunk.js",
     "static/css/main.158d85cb.chunk.css",
-    "static/js/main.633f24e9.chunk.js"
+    "static/js/main.00f85027.chunk.js"
   ]
 }
