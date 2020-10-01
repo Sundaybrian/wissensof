@@ -1,15 +1,6 @@
 /** @jsx jsx */
-import React from "react";
 import { css, jsx } from "@emotion/core";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
-} from "reactstrap";
+import CardItem from "../../components/Card/CardItem";
 
 function Slide({ content }) {
   {
@@ -25,9 +16,13 @@ function Slide({ content }) {
       `}
   */
   }
+  const { path, text, src, label } = content;
+
   return (
     <div>
-      <Card height="552px">
+      <CardItem src={src} path={path} text={text} label={label} />
+
+      {/* <Card height="552px">
         <CardImg
           css={css`
             height: 400px;
@@ -45,7 +40,7 @@ function Slide({ content }) {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio!
           </CardSubtitle>
         </CardBody>
-      </Card>
+      </Card> */}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import CardItem from "./CardItem";
 
 function Cards() {
   return (
-    <div className="cards">
+    <div className="cardss">
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
@@ -20,6 +20,18 @@ function Cards() {
               label="Adventure"
               path="/products"
             />
+            <CardItem
+              src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+              text="Ride through the Sahara Desert on a guided camel tour"
+              label="Adrenaline"
+              path="/sign-up"
+            />
+            <CardItem
+              src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+              text="Ride through the Sahara Desert on a guided camel tour"
+              label="Adrenaline"
+              path="/sign-up"
+            />{" "}
             <CardItem
               src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
               text="Ride through the Sahara Desert on a guided camel tour"

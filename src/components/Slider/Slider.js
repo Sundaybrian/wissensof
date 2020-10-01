@@ -23,6 +23,7 @@ function Slider({ slides }) {
   const { translate, transition, activeIndex } = state;
 
   const nextSlide = () => {
+    // if last slide reset slider
     if (activeIndex === slides.length - 1) {
       return setState({
         ...state,
@@ -99,7 +100,6 @@ const SliderHeader = css`
 const SliderArrows = css`
   display: flex;
   justify-content: space-between;
-  align-items: center;
 `;
 
 export default Slider;

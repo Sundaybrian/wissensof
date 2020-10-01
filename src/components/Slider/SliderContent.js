@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "@emotion/styled";
 
 const SliderContent = styled.div`
@@ -7,6 +6,7 @@ const SliderContent = styled.div`
   height: 100%;
   width: ${(props) => props.width}px;
   display: flex;
+  border: 2px solid red;
 `;
 
 export default SliderContent;

@@ -1,0 +1,32 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons__back {
+  margin: 0 2rem;
+}
+
+.control__btn {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #f2f2f2;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in 0.1s;
+}
+
+.control__btn:hover {
+  transform: scale(1.1);
+}
+
+.control__btn:focus,
+.control__btn:active {
+  outline: none;
+  border: 2px solid var(--brand-color);
+}
+
+i:focus {
+  outline: 0;
+}
