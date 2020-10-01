@@ -1,5 +1,5 @@
 .navbar {
-  background-color: teal;
+  background-color: rgba(0, 0, 0, 0.4);
   height: 72px;
   display: flex;
   justify-content: center;
@@ -20,9 +20,10 @@
 
 .navbar__logo {
   position: absolute;
-  top: 0;
   left: 0;
-  transform: translate(25%, 50%);
+  top: 10%;
+
+  transform: translate(20%, 10%);
 }
 
 .nav__menu {

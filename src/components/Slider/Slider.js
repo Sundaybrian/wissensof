@@ -1,105 +1,80 @@
-/** @jsx jsx */
-import React, { useState } from "react";
-import { css, jsx } from "@emotion/core";
-import SliderContent from "./SliderContent";
-import Slide from "./Slide";
-import Arrow from "./Arrow";
-import Dots from "./Dots";
+import React from "react";
+import "./Slider.css";
 import Title from "../Title";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+  Image,
+  Dot,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 
-/**
- *
- * @function Slider
- */
-function Slider({ slides }) {
-  const getWidth = () => window.innerWidth;
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button,
+} from "reactstrap";
 
-  const [state, setState] = useState({
-    translate: 0,
-    transition: 0.45,
-    activeIndex: 0,
-  });
-
-  const { translate, transition, activeIndex } = state;
-
-  const nextSlide = () => {
-    // if last slide reset slider
-    if (activeIndex === slides.length - 1) {
-      return setState({
-        ...state,
-        translate: 0,
-        activeIndex: 0,
-      });
-    }
-
-    setState({
-      ...state,
-      activeIndex: activeIndex + 1,
-      translate: (activeIndex + 1) * getWidth(),
-    });
-  };
-
-  const prevSlide = () => {
-    if (activeIndex === 0) {
-      return setState({
-        ...state,
-        translate: (slides.length - 1) * getWidth(),
-        activeIndex: slides.length - 1,
-      });
-    }
-
-    setState({
-      ...state,
-      translate: activeIndex - 1,
-      activeIndex: (activeIndex - 1) * getWidth(),
-    });
-  };
-
+function Carousel({ images, title }) {
   return (
-    <div>
-      <div css={SliderHeader}>
-        <Title title="testing" />
-        <div css={SliderArrows}>
-          <Arrow direction="left" handleClick={prevSlide} />
-          <Arrow direction="right" handleClick={nextSlide} />
+    <CarouselProvider
+      visibleSlides={2}
+      naturalSlideWidth={500}
+      naturalSlideHeight={496}
+      totalSlides={images.length}
+      infinite={true}
+    >
+      {" "}
+      <Title title={title}>
+        <div className="buttons">
+          <ButtonBack className="buttons__back control__btn">
+            <i>
+              <FaAngleLeft />
+            </i>
+          </ButtonBack>
+          <ButtonNext className="buttons__next control__btn">
+            <i>
+              <FaAngleRight />
+            </i>
+          </ButtonNext>
         </div>
+      </Title>
+      <Slider>
+        {images.map((img, index) => (
+          <Slide index={index} className="slide">
+            <div>
+              <Card className="slide__card">
+                <CardImg
+                  top
+                  width="100%"
+                  height="auto"
+                  src={img.src}
+                  alt="Card image cap"
+                />
+                <CardBody className="slide__cardbody">
+                  <CardTitle>{img.text}</CardTitle>
+                  <CardSubtitle>{img.label}</CardSubtitle>
+                </CardBody>
+              </Card>
+            </div>
+          </Slide>
+        ))}
+      </Slider>
+      <div className="slider__dots">
+        {images.map((dot, index) => (
+          <Dot slide={index} className="slider__dot" />
+        ))}
       </div>
-      <div css={SliderCSS}>
-        <SliderContent
-          translate={translate}
-          transition={transition}
-          width={getWidth() * slides.length}
-        >
-          {slides.map((slide, i) => (
-            <Slide key={slide + i} content={slide} />
-          ))}
-        </SliderContent>
-
-        <Dots slides={slides} activeIndex={activeIndex} />
-      </div>
-    </div>
+    </CarouselProvider>
   );
 }
 
-const SliderCSS = css`
-  position: relative;
-  // height: 60vh;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-`;
-
-const SliderHeader = css`
-  display: flex;
-  justify-content: space-between;
-  background: red;
-`;
-
-const SliderArrows = css`
-  display: flex;
-  justify-content: space-between;
-`;
-
-export default Slider;
+export default Carousel;

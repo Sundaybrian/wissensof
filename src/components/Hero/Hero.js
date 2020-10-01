@@ -11,7 +11,7 @@ function Hero({ hero }) {
       <Banner title="We provide innovative software solutions & application development." />
       <p className="scrolldown">
         <Link className="smoothscroll" to="#about">
-          <FaAngleDown />
+          <FaAngleDown className="angle__down" />
         </Link>
       </p>
     </header>

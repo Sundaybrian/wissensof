@@ -1,0 +1,96 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons__back {
+  margin: 0 2rem;
+}
+
+.control__btn {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #f2f2f2;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in 0.1s;
+}
+
+.control__btn:hover {
+  transform: scale(1.1);
+}
+
+.control__btn:focus,
+.control__btn:active {
+  outline: none;
+  border: 2px solid var(--brand-color);
+}
+
+i:focus {
+  outline: 0;
+}
+.slide {
+  border: none;
+  overflow: visible;
+}
+.slide__card {
+  border: none;
+  margin: 0 0.4rem !important;
+  border-bottom: 2px solid #4f4f4f !important;
+}
+
+.slide__cardbody {
+  background: var(--offBlack);
+  padding: 1rem 0 !important;
+  color: floralwhite;
+}
+
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__dot {
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #4f4f4f;
+  width: 9px;
+  height: 9px;
+  cursor: pointer;
+  border: #4f4f4f;
+}
+
+.slider__dot:active,
+.slider__dot:focus {
+  background: var(--brand-color);
+}
+
+.slider__dot:active > i,
+.slider__dot:focus > i {
+  color: var(--brand-color);
+}
+
+.slide__wiss__info {
+  background-color: var(--offBlack);
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  right: 0;
+  height: 55px;
+  width: 100%;
+  padding: 10px 10px 10px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .slide__cardbody {
+    background: var(--offBlack);
+    padding: 0.2rem 0 !important;
+  }
+  .control__btn {
+    height: 35px;
+    width: 35px;
+  }
+}
