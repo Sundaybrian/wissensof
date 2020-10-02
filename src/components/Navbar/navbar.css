@@ -46,6 +46,10 @@
   font-weight: 400;
 }
 
+.nav__links > .active {
+  color: var(--brand-color);
+}
+
 .nav__linksMobile {
   display: none;
 }

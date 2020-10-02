@@ -10,11 +10,11 @@ import Team from "../../components/Team/Team";
 function Landing() {
   return (
     <>
-      <Hero />
-      <About />
-      <Projects />
-      <Team />
-      <Contact />
+      <Hero id="home" />
+      <About id="about" />
+      <Projects id="projects" />
+      <Team id="team" />
+      <Contact id="contact" />
     </>
   );
 }

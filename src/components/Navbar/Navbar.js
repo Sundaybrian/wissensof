@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import Logo from "../../Assets/logo.png";
 import "./navbar.css";
@@ -11,11 +12,15 @@ function Navbar() {
 
   const closeMobileMenu = () => setClick(true);
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to="/" className="navbar__logo" onClick={closeMobileMenu}>
+          <Link to="home" className="navbar__logo" onClick={scrollToTop}>
             <img src={Logo} alt="" />
           </Link>
 
@@ -33,7 +38,12 @@ function Navbar() {
           <ul className={click ? "nav__menu " : "nav__menu active"}>
             <li className="nav__item">
               <Link
-                to="/about"
+                to="about"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="nav__links"
                 onClick={closeMobileMenu}
               >
@@ -42,7 +52,11 @@ function Navbar() {
             </li>
             <li className="nav__item">
               <Link
-                to="/projects"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="nav__links"
                 onClick={closeMobileMenu}
               >
@@ -50,13 +64,25 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="/team" className="nav__links" onClick={closeMobileMenu}>
+              <Link
+                to="team"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav__links"
+                onClick={closeMobileMenu}
+              >
                 The team
               </Link>
             </li>
             <li className="nav__item">
               <Link
-                to="/contact"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="nav__links"
                 onClick={closeMobileMenu}
               >
