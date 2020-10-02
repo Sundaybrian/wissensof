@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
   height: 72px;
   display: flex;
   justify-content: center;
@@ -43,10 +43,16 @@
   color: var(--white);
   text-decoration: none !important;
   padding: 0.5rem 1rem;
+  font-weight: 400;
 }
 
 .nav__linksMobile {
   display: none;
+}
+
+/* slightly transparent fallback */
+.backdrop-blur {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .nav__menu.active {
@@ -55,16 +61,48 @@
   align-items: center;
   text-align: center;
   /* justify-content: center; */
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  position: absolute;
-  top: 72px;
+  position: fixed;
+  top: 66px;
   left: 0;
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
+  background-image: linear-gradient(
+    60deg,
+    rgba(0, 0, 0, 0.9),
+    rgba(37, 29, 29, 0.8)
+  );
   transition: all 0.5s ease;
   z-index: 1;
 }
+
+.nav__menu.active li.nav__item:first-child {
+  margin-top: 6%;
+}
+
+/* if backdrop support: very transparent and blurred */
+@supports (
+  (-webkit-backdrop-filter: blur(100px)) or (backdrop-filter: blur(100px))
+) {
+  .nav__menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+}
+
 .nav__menu.active .nav__links {
   color: var(--white);
   font-size: 24px;
