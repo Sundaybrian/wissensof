@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wissensof/static/css/main.158d85cb.chunk.css",
-    "main.js": "/wissensof/static/js/main.00f85027.chunk.js",
-    "main.js.map": "/wissensof/static/js/main.00f85027.chunk.js.map",
+    "main.css": "/wissensof/static/css/main.095c02fd.chunk.css",
+    "main.js": "/wissensof/static/js/main.b94ca0a7.chunk.js",
+    "main.js.map": "/wissensof/static/js/main.b94ca0a7.chunk.js.map",
     "runtime-main.js": "/wissensof/static/js/runtime-main.ad922079.js",
     "runtime-main.js.map": "/wissensof/static/js/runtime-main.ad922079.js.map",
     "static/css/2.ad676774.chunk.css": "/wissensof/static/css/2.ad676774.chunk.css",
-    "static/js/2.4c5be79b.chunk.js": "/wissensof/static/js/2.4c5be79b.chunk.js",
-    "static/js/2.4c5be79b.chunk.js.map": "/wissensof/static/js/2.4c5be79b.chunk.js.map",
+    "static/js/2.b48d43d2.chunk.js": "/wissensof/static/js/2.b48d43d2.chunk.js",
+    "static/js/2.b48d43d2.chunk.js.map": "/wissensof/static/js/2.b48d43d2.chunk.js.map",
     "index.html": "/wissensof/index.html",
-    "precache-manifest.735fb345439a03ee38472acd89188265.js": "/wissensof/precache-manifest.735fb345439a03ee38472acd89188265.js",
+    "precache-manifest.18106521dca153269693de4781635657.js": "/wissensof/precache-manifest.18106521dca153269693de4781635657.js",
     "service-worker.js": "/wissensof/service-worker.js",
     "static/css/2.ad676774.chunk.css.map": "/wissensof/static/css/2.ad676774.chunk.css.map",
-    "static/css/main.158d85cb.chunk.css.map": "/wissensof/static/css/main.158d85cb.chunk.css.map",
-    "static/js/2.4c5be79b.chunk.js.LICENSE.txt": "/wissensof/static/js/2.4c5be79b.chunk.js.LICENSE.txt",
+    "static/css/main.095c02fd.chunk.css.map": "/wissensof/static/css/main.095c02fd.chunk.css.map",
+    "static/js/2.b48d43d2.chunk.js.LICENSE.txt": "/wissensof/static/js/2.b48d43d2.chunk.js.LICENSE.txt",
     "static/media/club.png": "/wissensof/static/media/club.48a061aa.png",
     "static/media/Hero.css": "/wissensof/static/media/hero.1c2d942b.jpg",
     "static/media/person.png": "/wissensof/static/media/person.12ea87a7.png"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.ad922079.js",
     "static/css/2.ad676774.chunk.css",
-    "static/js/2.4c5be79b.chunk.js",
-    "static/css/main.158d85cb.chunk.css",
-    "static/js/main.00f85027.chunk.js"
+    "static/js/2.b48d43d2.chunk.js",
+    "static/css/main.095c02fd.chunk.css",
+    "static/js/main.b94ca0a7.chunk.js"
   ]
 }
