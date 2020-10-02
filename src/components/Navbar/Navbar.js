@@ -39,7 +39,6 @@ function Navbar() {
             <li className="nav__item">
               <Link
                 to="about"
-                activeClass="active"
                 spy={true}
                 smooth={true}
                 offset={-70}
