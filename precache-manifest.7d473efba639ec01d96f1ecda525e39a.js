@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4832f3d7a118e15a79bceec0062e3074",
+    "revision": "18b4f55a367ccb92c842b4d60be03582",
     "url": "/wissensof/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wissensof/static/css/2.ad676774.chunk.css"
   },
   {
-    "revision": "170120c6c4287108d8b4",
-    "url": "/wissensof/static/css/main.095c02fd.chunk.css"
+    "revision": "9eabd28f7afe178edce3",
+    "url": "/wissensof/static/css/main.5c297539.chunk.css"
   },
   {
     "revision": "70a860ecbc09877ced8d",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wissensof/static/js/2.b48d43d2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "170120c6c4287108d8b4",
+    "revision": "9eabd28f7afe178edce3",
     "url": "/wissensof/static/js/main.b94ca0a7.chunk.js"
   },
   {
