@@ -7,27 +7,39 @@ function Team() {
   const images = [
     {
       path: "#!",
-      text: "Tess Mercer",
+      text: "Bernadette Orende",
       src: person,
-      label: "test",
+      label: "CEO",
     },
     {
       path: "#!",
-      text: "Tess Mercer2",
+      text: "Waweru Chris Avram",
       src: person,
-      label: "test",
+      label: "COO",
     },
     {
       path: "#!",
-      text: "Tess Mercer3",
+      text: "Brian Sunday",
       src: person,
-      label: "test",
+      label: "CTO",
     },
     {
       path: "#!",
-      text: "Tess Mercer3",
+      text: "Conceptor Orende",
       src: person,
-      label: "test",
+      label: "CFO",
+    },
+    {
+      path: "#!",
+      text: "Kevin Orende",
+      src: person,
+      label: "Director",
+    },
+    {
+      path: "#!",
+      text: "Sylvester Odera",
+      src: person,
+      label: "Director",
     },
   ];
   return (

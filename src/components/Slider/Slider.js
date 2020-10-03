@@ -8,20 +8,11 @@ import {
   Slide,
   ButtonBack,
   ButtonNext,
-  Image,
   Dot,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
-} from "reactstrap";
+import { Card, CardImg, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
 function Carousel({ images, title }) {
   return (
@@ -60,8 +51,12 @@ function Carousel({ images, title }) {
                   alt="Card image cap"
                 />
                 <CardBody className="slide__cardbody">
-                  <CardTitle>{img.text}</CardTitle>
-                  <CardSubtitle>{img.label}</CardSubtitle>
+                  <CardTitle className="slide__cardbody__text">
+                    {img.text}
+                  </CardTitle>
+                  <CardSubtitle className="slide__cardbody__label">
+                    {img.label}
+                  </CardSubtitle>
                 </CardBody>
               </Card>
             </div>
