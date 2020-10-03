@@ -11,7 +11,7 @@
 .control__btn {
   height: 40px;
   width: 40px;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #c4c4c4;
   background: transparent;
   border-radius: 50%;
   cursor: pointer;
@@ -26,6 +26,7 @@
 .control__btn:active {
   outline: none;
   border: 2px solid var(--brand-color);
+  color: var(--brand-color) !important;
 }
 
 i:focus {
@@ -48,9 +49,7 @@ i:focus {
 }
 
 .slider__dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .slider__dot {
@@ -92,5 +91,17 @@ i:focus {
   .control__btn {
     height: 35px;
     width: 35px;
+  }
+
+  .slider__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .buttons {
+    display: none;
   }
 }

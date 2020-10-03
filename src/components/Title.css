@@ -2,10 +2,24 @@
   display: flex;
   justify-content: space-between;
 }
+
 .title h4 {
   color: var(--white);
   font-style: normal;
   font-weight: normal;
   font-size: 44px;
   line-height: 56px;
+}
+
+@media only screen and (max-width: 540px) {
+  .title h4 {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .contact .title h4 {
+    font-size: 26px;
+    line-height: 38px;
+  }
 }
