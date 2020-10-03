@@ -16,11 +16,16 @@ function Navbar() {
     scroll.scrollToTop();
   };
 
+  const scrollAndCloseMenu = () => {
+    scrollToTop();
+    closeMobileMenu();
+  };
+
   return (
     <>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to="home" className="navbar__logo" onClick={scrollToTop}>
+          <Link to="home" className="navbar__logo" onClick={scrollAndCloseMenu}>
             <img src={Logo} alt="" />
           </Link>
 

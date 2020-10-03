@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL + "/"} component={Landing} />
-        {/* <Route exact path="/" component={Landing} /> */}
+        {/* <Route exact path={process.env.PUBLIC_URL + "/"} component={Landing} /> */}
+        <Route exact path="/" component={Landing} />
       </Switch>
       <Footer />
     </div>
