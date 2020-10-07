@@ -105,7 +105,17 @@ i:focus {
   .slide__cardbody {
     background: var(--offBlack);
     padding: 0.2rem 0 !important;
+    font-size: 14px;
   }
+
+  .slide__cardbody__text {
+    font-weight: 400;
+  }
+
+  .slide__cardbody__label {
+    font-weight: 300;
+  }
+
   .control__btn {
     height: 35px;
     width: 35px;
@@ -119,6 +129,9 @@ i:focus {
 }
 
 @media only screen and (max-width: 540px) {
+  .slide__cardbody {
+    background: #181818;
+  }
   .buttons {
     display: none;
   }

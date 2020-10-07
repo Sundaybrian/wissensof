@@ -2,3 +2,9 @@
   margin-top: 50px;
   color: var(--white);
 }
+
+@media only screen and (max-width: 540px) {
+  .team .slide__cardbody__label {
+    text-align: center;
+  }
+}

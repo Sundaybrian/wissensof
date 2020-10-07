@@ -2,3 +2,13 @@
   margin-top: 50px;
   color: var(--white);
 }
+
+@media only screen and (max-width: 540px) {
+  .projects .slide__cardbody__text {
+    font-weight: 700;
+  }
+
+  .projects .slide__cardbody__label {
+    font-weight: 300;
+  }
+}
