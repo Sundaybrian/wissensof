@@ -28,12 +28,23 @@
 }
 
 @media only screen and (max-width: 540px) {
+  .contact {
+    margin-top: 120px;
+  }
   .contact__details {
-    margin: 40px 0 80px 0;
+    margin: 8px 0 80px 0;
   }
 
   .contact h5 {
     font-size: 16px;
     line-height: 28px;
+  }
+
+  .contact__social {
+    margin-bottom: 20px;
+  }
+
+  .contact__email {
+    margin-top: 20px;
   }
 }

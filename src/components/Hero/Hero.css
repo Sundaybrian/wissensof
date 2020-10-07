@@ -9,7 +9,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); */
   object-fit: contain;
 }
 
@@ -28,6 +28,10 @@
   border-radius: 8px;
   transition: 0.3s;
 }
+.defaultHero .scrolldown a > svg.angle_down {
+  width: 2px !important;
+  height: 15.6px;
+}
 
 .defaultHero .scrolldown a:hover {
   cursor: pointer;
@@ -36,4 +40,10 @@
 
 .smoothscroll > .angle_down {
   width: 1.95px !important;
+}
+
+@media only screen and (max-width: 540px) {
+  .defaultHero .scrolldown a {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }

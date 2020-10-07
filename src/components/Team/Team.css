@@ -4,6 +4,9 @@
 }
 
 @media only screen and (max-width: 540px) {
+  .team {
+    margin-top: 100px;
+  }
   .team .slide__cardbody__label {
     text-align: center;
   }

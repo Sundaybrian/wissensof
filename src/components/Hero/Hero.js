@@ -8,7 +8,12 @@ import Banner from "../Banner/Banner";
 function Hero({ hero }) {
   return (
     <header className={hero}>
-      <Banner title="We provide innovative software solutions & application development." />
+      <Banner
+        title="We provide innovative software"
+        subtitle="solutions & application"
+      >
+        <h1>development</h1>
+      </Banner>
       <p className="scrolldown">
         <Link
           className="smoothscroll"
