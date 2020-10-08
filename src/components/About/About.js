@@ -11,18 +11,19 @@ function About() {
           <div className="col-md-6">
             <p>
               {" "}
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-              ducimus dicta doloremque aliquam provident sequi deserunt maxime
-              distinctio ullam? Quod incidunt aliquam magni neque aut
-              necessitatibus laboriosam officiis, rem optio!
+              Wissensof Technologies is a software development company that
+              provides innovative solutions to complex business problems. We
+              understand that every business is different, and there are no
+              cookie cutter solutions. We take satisfaction in understanding
+              your business in order to provide you with applications that solve
+              your most pressing challenges.
             </p>
           </div>
           <div className="col-md-6">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              hic. Mollitia odio, earum tempore atque veniam rerum at magni
-              dicta dolores sapiente odit dignissimos quasi? Eos alias aperiam
-              dignissimos aut.
+              Our team is committed to providing cutting edge technological
+              solutions that are scalable, secure, and easy to use across
+              devices.
             </p>
           </div>
         </div>
