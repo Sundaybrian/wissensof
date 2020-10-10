@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9577e33451f34eab8d0ca0eabfeaa002",
+    "revision": "e50abd01a9e3fc82749e1c2a637546ba",
     "url": "/wissensof/index.html"
   },
   {
-    "revision": "4813779ee20ea3f736ff",
+    "revision": "4f491ea1cbb365fde9d3",
     "url": "/wissensof/static/css/2.ad676774.chunk.css"
   },
   {
-    "revision": "04798b4d9abe12585785",
-    "url": "/wissensof/static/css/main.3a85df93.chunk.css"
+    "revision": "56cbb1b20beb93575208",
+    "url": "/wissensof/static/css/main.f6cf505a.chunk.css"
   },
   {
-    "revision": "4813779ee20ea3f736ff",
-    "url": "/wissensof/static/js/2.2d4e743d.chunk.js"
+    "revision": "4f491ea1cbb365fde9d3",
+    "url": "/wissensof/static/js/2.ebe181d4.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/wissensof/static/js/2.2d4e743d.chunk.js.LICENSE.txt"
+    "url": "/wissensof/static/js/2.ebe181d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04798b4d9abe12585785",
-    "url": "/wissensof/static/js/main.a59b9121.chunk.js"
+    "revision": "56cbb1b20beb93575208",
+    "url": "/wissensof/static/js/main.aa7a9f9a.chunk.js"
   },
   {
     "revision": "2b95af065b98b4263579",
