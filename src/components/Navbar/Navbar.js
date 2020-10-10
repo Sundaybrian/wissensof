@@ -51,7 +51,7 @@ function Navbar() {
                 className="nav__links"
                 onClick={closeMobileMenu}
               >
-                About
+                About Us
               </Link>
             </li>
             <li className="nav__item">
@@ -64,7 +64,7 @@ function Navbar() {
                 className="nav__links"
                 onClick={closeMobileMenu}
               >
-                Projects
+                Our Projects
               </Link>
             </li>
             <li className="nav__item">
@@ -77,7 +77,7 @@ function Navbar() {
                 className="nav__links"
                 onClick={closeMobileMenu}
               >
-                The team
+                Meet The team
               </Link>
             </li>
             <li className="nav__item">

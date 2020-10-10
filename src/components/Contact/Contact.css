@@ -19,12 +19,33 @@
   justify-content: space-between;
 }
 
-.contact__social {
+.contact__email {
   margin-bottom: 40px;
 }
 
-.contact__email {
+.contact__social {
   margin-top: 40px;
+}
+
+.contact__social .social__fa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social__fa .social__icons {
+  font-size: 25px;
+  color: #c4c4c4;
+  transform: scale(1);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.social__fa .social__icons:hover {
+  font-size: 25px;
+  transform: scale(1.2);
+  color: #007bff;
 }
 
 @media only screen and (max-width: 540px) {
@@ -41,10 +62,10 @@
   }
 
   .contact__social {
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .contact__email {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

@@ -44,7 +44,7 @@ function Team() {
   ];
   return (
     <div className="team container">
-      <Slider images={images} title="Team" />
+      <Slider images={images} title="Meet The Team" />
     </div>
   );
 }

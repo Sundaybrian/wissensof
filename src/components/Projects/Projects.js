@@ -7,33 +7,33 @@ function Projects() {
   const images = [
     {
       path: "#!",
-      text: "Tess Mercer",
+      text: "Football Engagement Platform",
       src: club,
-      label: "test",
+      label: "",
     },
     {
       path: "#!",
-      text: "Tess Mercer2",
+      text: "Events App",
       src: club,
-      label: "test",
+      label: "",
+    },
+    {
+      path: "#!",
+      text: "Massive Ticketing",
+      src: club,
+      label: "",
     },
     {
       path: "#!",
       text: "Tess Mercer3",
       src: club,
-      label: "test",
-    },
-    {
-      path: "#!",
-      text: "Tess Mercer3",
-      src: club,
-      label: "test",
+      label: "",
     },
   ];
 
   return (
     <div className="container projects">
-      <Slider images={images} title="Projects" />
+      <Slider images={images} title="Our Projects" />
     </div>
   );
 }

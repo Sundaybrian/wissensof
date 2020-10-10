@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="container">
       <section className="about">
-        <Title title="About" />
+        <Title title="About Us" />
         <div className="row">
           <div className="col-md-6">
             <p>
