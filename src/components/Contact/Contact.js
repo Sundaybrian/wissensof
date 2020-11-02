@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../Title";
 import "./Contact.css";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
     return (
