@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../Title";
 import "./Contact.css";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
     return (
@@ -42,9 +42,13 @@ const Contact = () => {
                             >
                                 <FaFacebook className="social__icons" />
                             </a>
-                            {/* <Link>
+                            <a
+                                href="https://www.linkedin.com/company/wissensof/"
+                                target="_blank"
+                                rel="noopener"
+                            >
                                 <FaLinkedin className="social__icons" />
-                            </Link> */}
+                            </a>
                         </div>
                     </div>
                 </div>
